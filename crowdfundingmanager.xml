@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_CROWDFUNDINGMANAGER</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2017 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.en.html GNU/GPLv3</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.2</version>
+    <creationDate>18 September, 2016</creationDate>
+    <description><![CDATA[
+    <p>Content - Crowdfunding Manager is a plugin that adds functionality for managing projects on details page. It also displays information about the owner of the project, statistical data for the project,...</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+    
+    <help url="PLG_CONTENT_CROWDFUNDINGMANAGER_HELP_URL"/>
+    
+    <files>
+        <filename plugin="crowdfundingmanager">crowdfundingmanager.php</filename>
+        <folder>language</folder>
+    </files>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="display_title" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TITLE" description="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TITLE_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                
+                <field name="display_toolbar" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TOOLBAR" description="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TOOLBAR_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="display_statistics" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_STATISTICS" description="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_STATISTICS_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+	</config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Content - Crowdfunding Manager">http://cdn.itprism.com/updates/crowdfunding/plugins/plg_content_crowdfundingmanager.xml</server>
+    </updateservers>
+</extension>
